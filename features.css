@@ -22,3 +22,15 @@
     width: 90%;
     margin: auto;
 }
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.lineBreak{
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    bottom: -0.5rem;
+    background-color: rgb(35,35,35);
+}
