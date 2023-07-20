@@ -1,75 +1,120 @@
-.faq{
-    padding: 10px 12%;
-    text-align: center;
-    font-size: 18px;
+.faq {
+  padding: 10px 12%;
+  text-align: center;
+  border-top: 8px solid rgb(51, 51, 51);
+  font-size: 18px;
 }
 
-
-.faq h2{
-    font-size: 3rem;
-    font-weight: 900;
+.faq h2 {
+    margin-top: 50px;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
-.acc
-{
-    margin: 60px  auto;
-    width:100%;
-    /* max-width: 750px; */
-
+.acc {
+  margin: 30px auto;
+  width: 100%;
 }
 
-.acc li{
-    list-style: none;
-    width: 100%;
-        font-size: 1.5rem;
-    font-weight: 400;
-    padding: 5px;
+.acc li {
+  list-style: none;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 5px;
 }
 
-.acc li label{
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    background: rgb(48, 48, 48);
-    margin-bottom: 2px;
-    cursor:pointer;
-    position: relative;
+.acc li label {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background: rgb(48, 48, 48);
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
 }
 
-label::after{
-    content: '+';
-    font-size: 34px;
-    position: absolute;
-    right: 20px;
-    transition: transform 0.5s;
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
 }
 
-input[type='radio']{
-    display: none;
+input[type="radio"] {
+  display: none;
 }
 
-.acc .content{
-    background: rgb(48, 48, 48);
-    text-align: left;
-    padding: 0 20px;
-    max-height: 0;
-    overflow:hidden;
-    transition: max-height 0.5s , padding 0.5s;
+.acc .content {
+  background: rgb(48, 48, 48);
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
 }
 
-.acc input[type='radio']:checked +label + .content{
-    max-height:600px ;
-    padding: 30px 20px;
+.acc input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
 }
 
-.acc input[type='radio']:checked + label::after{
-    transform: rotate(135deg);
+.acc input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
 }
 
-.faq .signUp{
-    max-width: 650px;
-    margin: 20px auto 60px;
+.faq .signUp {
+  max-width: 650px;
+  margin: 20px auto 60px;
 }
-.faq small{
-    font-size: 13px ;
+.faq small {
+  font-size: 13px;
+}
+
+.footer {
+  padding: 50px 15% 10px;
+  border-top: 8px solid rgb(51, 51, 51);
+  color: rgb(119, 119, 119);
+}
+
+.footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .col {
+  width: 30%;
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.footer .col a {
+  display: block;
+  color: rgb(119, 119, 119);
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+.footer .row {
+  padding: 10px 0;
+}
+.footerBtn{
+    margin: 5px 14%;
+}
+.footerBtn button{
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+footer p{
+    padding: 3.75rem 0;
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.7);
+    margin-left: 14rem;
 }
